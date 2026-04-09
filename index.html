@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="color-scheme" content="dark">
 <title>Monster Sanctuary Master Databases</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 <style>
@@ -16,16 +15,21 @@ padding: 0;
 
 ```
 body {
-display: flex;
-align-items: center;
-justify-content: space-between;
 background-color: #191919;
 color: #ffffff;
 font-family: 'Montserrat', 'Segoe UI', sans-serif;
 font-weight: 400;
 min-height: 100vh;
-line-height: 1.5;
-padding: 3rem 2rem;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding: 5rem 2rem;
+}
+
+.container {
+width: 100%;
+max-width: 680px;
+text-align: center;
 }
 
 .page-title {
@@ -45,6 +49,7 @@ margin-bottom: 3rem;
 .link-grid {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 gap: 0.75rem;
 }
 
@@ -52,14 +57,13 @@ gap: 0.75rem;
 .link-btn {
 display: inline-flex;
 align-items: center;
-gap: 0.5rem;
 background-color: #191919;
 color: #ffffff;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', 'Segoe UI', sans-serif;
 font-weight: 400;
-font-size: 0.9rem;
+font-size: 2rem;
 padding: 0.55rem 1.1rem;
-border-radius: 8px;
+border-radius: 18px;
 border: 1.5px solid #1a1a1a;
 text-decoration: none;
 cursor: pointer;
@@ -74,32 +78,32 @@ border-color: #2e8b57;
 box-shadow: 0 0 18px 4px rgba(46, 139, 87, 0.22);
 transform: rotate(3deg);
 }
-
-.link-tag {
-font-size: 0.7rem;
-color: #2e8b57;
-background: rgba(46, 139, 87, 0.12);
-padding: 0.1rem 0.4rem;
-border-radius: 4px;
-}
 ```
 
 </style>
 </head>
 <body>
 
+<div class="container">
+
+```
 <h1 class="page-title">Monster Sanctuary Master Databases</h1>
-<p class="page-subtitle">A collection of the large Monster Sanctuary Databases for all your needs.</p>
+<p class="page-subtitle">A collection of the largest MonSan databases for all your MonSan needs.</p>
 
 <div class="link-grid">
 
+<!-- ── HOW TO ADD A LINK ──────────────────
+<a class="link-btn" href="URL" target="_blank">Label</a>
+─────────────────────────────────────────── -->
+
 <a class="link-btn" href="https://claude.ai" target="_blank">Claude</a>
 <a class="link-btn" href="https://chat.openai.com" target="_blank">ChatGPT</a>
-<a class="link-btn" href="https://excalidraw.com" target="_blank">
-Excalidraw <span class="link-tag">drawing</span>
-</a>
+<a class="link-btn" href="https://excalidraw.com" target="_blank">Excalidraw</a>
 <a class="link-btn" href="https://news.ycombinator.com" target="_blank">Hacker News</a>
 <a class="link-btn" href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+
+</div>
+```
 
 </div>
 
